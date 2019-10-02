@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>慧城</title>
+    <link rel="stylesheet" href="css/headFoot.css">
+    <link rel="stylesheet" href="css/swiper.min.css">
+    <link rel="stylesheet" href="css/indexSty.css">
+</head>
+<style>
+  .swiper-container {
+      width: 100%;
+      height: 516px;
+      margin-top:30px;
+    }
+    .swiper-slide {
+      text-align: center;
+      height: 516px;
+      font-size: 18px;
+      background: #fff;
+      /* Center slide text vertically */
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: -webkit-flex;
+      display: flex;
+      -webkit-box-pack: center;
+      -ms-flex-pack: center;
+      -webkit-justify-content: center;
+      justify-content: center;
+      -webkit-box-align: center;
+      -ms-flex-align: center;
+      -webkit-align-items: center;
+      align-items: center;
+    }
+    .swiper-pagination{
+        position:relative;
+        top:-80px;
+    }
+  </style>
+<body>
+ <div class="head"></div>
+ 
+
+ <div class="waper">
+     <!-- banner -->
+    <div class="swiper-container" >
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+              <a href="javascript:;"><img src="images/banner.png" class="imgSize" alt=""></a>
+            </div>
+          <div class="swiper-slide">
+              <a href="javascript:;"><img src="images/banner.png" class="imgSize" alt=""></a>
+          </div>
+        </div>
+        <!-- Add Pagination -->
+        <div class="swiper-pagination"></div>
+    </div>
+    <!-- 内容 -->
+    <div class="conter allWidth">
+        <ul>
+            <li>
+                <div class="imgBox"><img src="images/railway01.png" class="imgSize" alt=""></div>
+                <p class="index_txt tc">铁路垂直跨境营销平台</p>
+                <p class="btnBox btn"><a href="javascript:;">了解详情</a></p>
+            </li>
+            <li>
+                <div class="imgBox"><img src="images/railway02.png" class="imgSize" alt=""></div>
+                <p class="index_txt tc">产业互联网+铁路定制解决方案</p>
+                <p class="btnBox btn"><a href="javascript:;">了解详情</a></p>
+            </li>
+        </ul>
+    </div>
+ </div>
+
+ <div class="footer"></div>
+</body>
+<script src="script/jquery.min.js"></script>
+<script src="script/swiper.js"></script>
+<script>
+$(function (){
+    $(".head").load("head.html");
+    // $(".footer").css({marginTop:$(window).height()-440});
+    $(".footer").load("footer.html");
+
+    // 轮播图
+    var swiper = new Swiper('.swiper-container', {
+      speed:300,
+      autoplay:{
+        delay:3000
+      },
+      pagination: {
+        el: '.swiper-pagination',
+      },
+    });
+    
+})
+</script>
+</html>

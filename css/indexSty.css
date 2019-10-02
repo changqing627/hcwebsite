@@ -1,0 +1,40 @@
+/* index */
+.conter ul{
+    display:flex;
+    justify-content:space-between;
+    margin-top:60px;
+}
+.index_txt{
+    font-size:16px;
+    font-weight:bolder;
+    margin-top:30px;
+}
+.imgBox{
+    width:530px;
+    height:320px;
+}
+.btnBox{
+  margin-top:25px;
+  margin-left:205px;  
+}
+/* 铁路装备垂直跨境营销平台 */
+.navTit{
+    font-size:20px;
+    color:#000;
+    text-align:center;
+    font-weight:bold;
+    margin-top:50px;
+}
+.case ul li{
+    float:left;
+}
+.case ul li:nth-child(2){
+    margin:0 10px;
+}
+.case ul li:nth-child(5){
+    margin:0 10px;
+}
+.case ul li p{
+  height:60px;
+  padding-top:15px;  
+}
