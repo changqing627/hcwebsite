@@ -24,14 +24,29 @@ a,li{
     color:#fff;
     background:#3482c5;
 }
+.comTxt{
+    text-indent:2rem;
+    color:#7e7f80;
+    line-height:25px;
+}
 
+.fs14{font-size:14px;}
 .oh{overflow:hidden;}
 .tc{text-align:center;}
 .fl{float:left;}
 .fr{float:right;}
+.mt20{margin-top:20px;}
+.mt30{margin-top:30px;}
+.mt45{margin-top:45px;}
 .mt60{margin-top:60px;}
 .mt70{margin-top:70px;}
 .mt120{margin-top:120px;}
+
+.ml10{margin-left:10px;}
+.ml40{margin-left:40px;}
+.mr10{margin-right:10px;}
+
+.mb40{margin-bottom:40px;}
 
 /* header */
 header{
