@@ -18,7 +18,8 @@
   "dependencies": {
     "jquery": "^3.4.1",
     "jquery.js": "0.0.2-security",
-    "swiper": "^5.0.4"
+    "swiper": "^5.0.4",
+    "ws": "^7.1.2"
   },
   "description": ""
 }

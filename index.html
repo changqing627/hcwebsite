@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="headerName" content="index">
     <title>慧城</title>
     <link rel="stylesheet" href="css/headFoot.css">
     <link rel="stylesheet" href="css/swiper.min.css">
@@ -14,6 +15,8 @@
       width: 100%;
       height: 516px;
       margin-top:30px;
+      position:relative;
+      z-index:0;
     }
     .swiper-slide {
       text-align: center;
@@ -81,7 +84,10 @@
 <script src="script/index.js"></script>
 <script>
 $(function (){
-
+  $.ajax({cache: false});
+// 头 尾
+$(".head").load("head.html");
+    $(".footer").load("footer.html");
     // 轮播图
     var swiper = new Swiper('.swiper-container', {
       speed:300,
@@ -92,6 +98,7 @@ $(function (){
         el: '.swiper-pagination',
       },
     });
+
     
 })
 </script>
