@@ -10,10 +10,10 @@
     <link rel="stylesheet" href="css/indexSty.css">
 </head>
 <body>
-    <div class="head"></div>
+    <div class="head" id="header"></div>
 
     <div class="wayCont allWidth">
-        <div class="aboutTxt mt60">
+        <div class="aboutTxt mt60" id="about01">
                 慧城(北京)科技有限公司是一家国家认定的高新技术企业，集科技研发与国际贸易为一体，拥有一批以资深高级工程师、教授、博硕生导师为核心的老中青相结合的人才队伍，在湖北黄石拥有五万平米的现代化生产制造基地，公司长期专注于移动互联网新一代信息技术与物联网、移动智能终端、精密测量、图像自动识别等技术的应用，将工业过程自动化、智能化、仓储与物流系统集成化、管理数据可视化进行有效整合与集成应用创新，先后与国家铁路局、哈尔滨铁路局、北京铁路局、上海铁路局、成都地铁公司、哈萨克斯坦铁道部、美国SKF铁路轴承集团公司精诚合作，研发铁路技术创新服务平台和原创铁路产品垂直跨境营销平台，为铁路及轨道交通机车车辆设备运维管理提供系统解决方案、从源头全程严控生产环节，量身定制生产铁路机车车辆设备及配件运维自动化生产线装备及质量控制数据可视化管理系统，并在全国铁路得到推广使用，借助中国铁路集成优势及“一带一路”走出去战略，陆续成为哈萨克斯坦、乌兹别克斯坦、巴西、阿根廷、哥伦比亚等国家铁路产品合格供应商，并赢得良好的声誉。 
         </div>
         <div class="aboutImg mt60">
@@ -27,25 +27,30 @@
         </div>
         <div class="cooper mt70">
             <p style="height:30px;"></p>
-            <p class="tc">合作意向</p>
+            <p class="tc" id="about02">合作意向</p>
             <div class="form oh mt30">
-                <input type="text" placeholder="姓名">
-                <input type="text" class="ml10" placeholder="联系方式">
-                <textarea style="margin-top:10px;" placeholder="合作意向"></textarea>
+                <input type="text" placeholder="姓名" selectname="about03" id="about03">
+                <input type="text" class="ml10" placeholder="联系方式" selectname01="联系方式" id="about04">
+                <textarea style="margin-top:10px;" placeholder="联系方式" selectname02="联系方式" id="about05"></textarea>
             </div>
             <p class="btn sentBtn tc">
-                <a href="javascript:;" style="width:320px; height:43px; line-height:43px; margin-top:20px;">立即发送</a>
+                <a href="javascript:;" style="width:320px; height:43px; line-height:43px; margin-top:20px;" id="about06">立即发送</a>
             </p>
         </div>
     </div>
 
-    <div class="footer"></div>
+    <div class="footer" id="footer"></div>
 </body>
 <script src="script/jquery.min.js"></script>
+<script src="script/jquery.i18n.properties.min.js"></script>
+<script src="script/head.js"></script>
+<script src="script/footer.js"></script>
+<script src="script/language.js"></script>
+<script src="script/index.js"></script>
 <script>
 $(function (){
-    $(".head").load("head.html");
-    $(".footer").load("footer.html");
+    // $(".head").load("head.html");
+    // $(".footer").load("footer.html");
 })
 </script>
 </html>
