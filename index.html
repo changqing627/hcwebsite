@@ -43,10 +43,12 @@
     }
   </style>
 <body>
- <div class="head"></div>
+ <div class="head" id="header"></div>
  
 
  <div class="waper">
+
+
      <!-- banner -->
     <div class="swiper-container" >
         <div class="swiper-wrapper">
@@ -65,29 +67,32 @@
         <ul>
             <li>
                 <div class="imgBox"><img src="images/railway01.png" class="imgSize" alt=""></div>
-                <p class="index_txt tc">铁路垂直跨境营销平台</p>
-                <p class="btnBox btn"><a href="railway.html">了解详情</a></p>
+                <p class="index_txt tc" id="index01">铁路垂直跨境营销平台</p>
+                <p class="btnBox btn"><a href="railway.html" id="index03">了解详情</a></p>
             </li>
             <li>
                 <div class="imgBox"><img src="images/railway02.png" class="imgSize" alt=""></div>
-                <p class="index_txt tc">产业互联网+铁路定制解决方案</p>
-                <p class="btnBox btn"><a href="interCustom.html">了解详情</a></p>
+                <p class="index_txt tc" id="index02">产业互联网+铁路定制解决方案</p>
+                <p class="btnBox btn"><a href="interCustom.html" id="index04">了解详情</a></p>
             </li>
         </ul>
     </div>
  </div>
 
- <div class="footer"></div>
+ <div id="footer"></div>
 </body>
 <script src="script/jquery.min.js"></script>
+<script src="script/jquery.i18n.properties.min.js"></script>
+<script src="script/head.js"></script>
+<script src="script/footer.js"></script>
+<script src="script/language.js"></script>
 <script src="script/swiper.js"></script>
+<script src="script/jquery.cookie.js"></script>
 <script src="script/index.js"></script>
+
+
 <script>
 $(function (){
-  $.ajax({cache: false});
-// 头 尾
-$(".head").load("head.html");
-    $(".footer").load("footer.html");
     // 轮播图
     var swiper = new Swiper('.swiper-container', {
       speed:300,
@@ -98,6 +103,9 @@ $(".head").load("head.html");
         el: '.swiper-pagination',
       },
     });
+
+    var seVal=document.cookie.split("=")[1];
+        $("#lang").find("option[value="+seVal+"]").prop("selected",true);
 
     
 })

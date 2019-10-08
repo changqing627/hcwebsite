@@ -1,43 +1,20 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>header</title>
-    <link rel="stylesheet" href="css/headFoot.css">
-    <link rel="stylesheet" href="css/select_gj.css">
-</head>
-<style>
-.head{
-        border-radius: 5px;
-        margin: 0 auto;
-        position: relative;
-    }
-    .select2-selection__rendered{
-        text-align: center;
-    }
-</style>
-<body>
-<header>
+document.write('<link rel="stylesheet" href="css/select_gj.css">');
+document.write('<script src="script/select_gj.min.js"></script>');
+document.write('<script src="script/select2_1.js"></script>');
+
+$(function (){
+
+    var headBox=`<header>
     <ul class="indexNav">
         <li>
-                <!-- <div id="langBox">
-                        <select id="lang">         
-                            <option value="ch">中文</option>
-                            <option value="en">English</option>
-                            <option value="ru">русский язык</option>
-                            <option value="es">Español</option>
-                            <option value="pt">Português</option>
-                        </select>
-                    </div> -->
-                    <div class="head" id="langBox">
+              
+                <div class="head" id="langBox">
                         <select name="country" class="fastbannerform__country" id="lang">
-                            <option value="CHN" title="CN" selected="selected">China</option>
-                            <option value="GBR" title="GB" >United Kingdom</option>
-                            <option value="RUS" title="RU" >Russia</option>
-                            <option value="ESP" title="ES" >Spain</option> 
-                            <option value="PRT" title="PT" >Portugal</option>
+                            <option value="ch" title="CN" selected="selected">China,默认中文浏览</option>
+                            <option value="en" title="GB" >English</option>
+                            <option value="ru" title="RU" >Russia</option>
+                            <option value="es" title="ES" >Spain</option> 
+                            <option value="pt" title="PT" >Portugal</option>
                         </select>
                     </div>
         </li>
@@ -92,16 +69,6 @@
             <li><a href="javascript:;"><img src="images/right/youxiang-s.png" alt=""></a></li>
             <li><a href="javascript:;"><img src="images/right/weixin-s.png" alt=""></a></li>
         </ul>
-     </div>
-</body>
-<script src="script/jquery.min.js"></script>
-<script src="script/jquery.i18n.properties.min.js"></script>
-<script src="script/select_gj.min.js"></script>
-<script src="script/select2_1.js"></script>
-<script src="script/language.js"></script>
-<script>
-$(function (){
-    
+     </div>`;
+     $("#header").html(headBox);
 })
-</script>
-</html>

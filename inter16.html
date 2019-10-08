@@ -10,31 +10,34 @@
     <link rel="stylesheet" href="css/indexSty.css">
 </head>
 <body>
-    <div class="head"></div>
+    <div class="head" id="header"></div>
 
     <div class="wayCont allWidth">
             <ul class="breNav oh mt30">
                     <li><span></span></li>
-                    <li><a href="interCustom.html">产业互联网+定制解决方案</a></li>
+                    <li><a href="interCustom.html" id="case75">产业互联网+定制解决方案</a></li>
                     <li>/</li>
-                    <li>可视化应急指挥系统</li>
+                    <li id="case76">可视化应急指挥系统</li>
                 </ul>
-        <div class="twoTit mt60"> <span>案例： </span>可视化应急指挥系统</div>
+        <div class="twoTit mt60" id="case77"> <span>案例： </span>可视化应急指挥系统</div>
         <div class="viewBox">
             <img class="mt45" src="images/intercase/inter16_01.jpg" alt="">
             <img class="mt60" src="images/intercase/inter16_02.jpg" alt="">
         </div>
     </div>
 
-    <div class="footer"></div>
+    <div class="footer" id="footer"></div>
     
 </body>
 <script src="script/jquery.min.js"></script>
+<script src="script/jquery.i18n.properties.min.js"></script>
+<script src="script/head.js"></script>
+<script src="script/footer.js"></script>
+<script src="script/language.js"></script>
 <script src="script/index.js"></script>
 <script>
 $(function (){
-  $(".head").load("head.html");
-  $(".footer").load("footer.html"); 
+
 })
 </script>
 </html>
