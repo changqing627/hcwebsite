@@ -16,7 +16,7 @@
   },
   "homepage": "https://github.com/changqing627/hcwebsite#readme",
   "dependencies": {
-    "jquery": "^3.4.1",
+    "jquery": "^3.5.0",
     "jquery.js": "0.0.2-security",
     "swiper": "^5.0.4",
     "ws": "^7.1.2"
